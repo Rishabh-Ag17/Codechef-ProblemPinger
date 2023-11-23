@@ -1,0 +1,19 @@
+body {
+    height: 50px;
+    width: 500px;
+    background-color: black;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+img {
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 30%;
+}
+
+h1 {
+    font-size: 15px;
+}

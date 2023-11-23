@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "CodechefProblemPinger",
+    "version": "1.0",
+    "description": "Pings you on completion of the submission of a CodeChef Problem",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "128": "./images/image_1.png",
+        "64": "./images/64.png",
+        "48": "./images/image.png",
+        "32": "./images/32.png",
+        "16": "./images/16.png"
+    },
+    "permissions": [
+        "webRequest",
+        "debugger",
+        "tabs",
+        "notifications",
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://www.codechef.com/"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ]
+}
