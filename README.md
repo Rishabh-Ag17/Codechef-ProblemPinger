@@ -38,4 +38,4 @@ Usage
 3. Move on to the next problem without worrying about the status.
 
 4. The extension will automatically notify you of the acceptance or rejection of your solution.
->>>>>>> be6219dab2f17074d3ccb7a61005732920824e59
+
